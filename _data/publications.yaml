@@ -1,30 +1,50 @@
 papers:
 
-  - title: "Creative Lyrics with Transformer-Based Reinforcement Learning (In Progress)"
-    description: "Using reward- and creative token- based learning to produce more creative, coherent song lyrics."
-    venue: "Chinmaya Andukuri, Niral Patel (Stanford CS230, Spring '23)"
-    code: https://github.com/scandukuri/CS230-SPRING23
-    nlp: y
+  - title: "Veritus ID"
+    description: "Using ECDSA-signatures and selected disclosure zero knowledge proofs to issue signed verifiable credentials."
+    venue: "Ishan Dhanani, Thomas Montford, Anish Maddipoti"
+    code: https://github.com/ishandhanani/zkvc
+    ml: y
     all: y
+    web3: y
 
-  - title: "Twitter/Reddit Financial Sentiment with Deep Learning"
-    description: "Stock price prediction and paper trading with vanilla and Convolutional Neural Networks (CNNs) on Twitter and Reddit sentiment."
-    venue: "Chinmaya Andukuri, Shobha Dasari, Eden Wang (Stanford CS224N, Winter '23)"
-    code: https://github.com/scandukuri/TwitterRedditFinancialSentimentNetwork
-    nlp: y
+  - title: "Reveille Pass"
+    description: "Developed ERC4907 rentable NFT implementation of Texas A&M's sports pass. Currently working on long-term implementation roadmap with university"
+    venue: "Ishan Dhanani and Texas A&M Blockchain Dev Cohort"
+    code: https://github.com/tamublockchain/revpass
+    ml: y
     all: y
+    web3: y
 
-  - title: "IMDB Sentiment Analysis"
-    description: "Exploring basic classifiers used for sentiment analysis using a dataset of 50,000 movie reviews from IMDB."
-    venue: "Chinmaya Andukuri"
-    code: https://github.com/scandukuri/IMDB-Sentiment-Analysis
-    nlp: y
-    all: y 
-
-  - title: "Spotify Wrapp(ing)"
-    description: "Uses the Spotify API to access a user's listening history and create an in-progress version of Spotify Wrapped's results."
-    venue: "Chinmaya Andukuri"
-    code: https://github.com/scandukuri/SpotifyWrapping
-    other: y
+  - title: "Spotify Utility Suite"
+    description: "Custom tools designed to automate organizing my robust music collection. Includes data visualizations for public playlists and uses K-Means clustering to compare personal and Spotify created playlists."
+    venue: "Ishan Dhanani"
+    code: https://github.com/ishandhanani/spotify-utility-suite
+    ml: y
     all: y
+    web3: y 
+
+  - title: "CryptoDash"
+    description: "Cryptocurrency trading dashboard that includes Twitter sentiment analysis, TA tools, and automatic data refresh via Bitfinex API"
+    venue: "Ishan Dhanani"
+    code: https://github.com/ishandhanani/crypto-dashboard
+    ml: y
+    all: y
+    web3: y
+
+  - title: "Matching Pennies"
+    description: "Using commit-reveal schemes to play a multiplayer mixed strategy game on-chain (live on Ethereum Testnet)"
+    venue: "Ishan Dhanani"
+    code: https://github.com/ishandhanani/matchingpennies
+    ml: y
+    all: y
+    web3: y
+
+  - title: "QuikBets"
+    description: "Implementing a custom version of Avalanche's snowball consensus in Solidity to create a social betting platform"
+    venue: "Ishan Dhanani (final project for Texas A&M's CSCE689 - Blockchains couse)
+    code: https://github.com/ishandhanani/quikbets
+    ml: y
+    all: y
+    web3: y
 
