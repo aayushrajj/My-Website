@@ -22,7 +22,7 @@ experiences:
   title: "Summer Intern"
   subtitle: "Machine Learning Engineer"
   category: "work"
-
+  
 - place: "Differential Capital"
   time: "January 2022 - April 2022"
   title: "Summer Intern"
@@ -35,7 +35,7 @@ experiences:
   subtitle: "Treasury Analytics Intern"
   category: "work"
 
-  - place: "Texas A&M University"
+- place: "Texas A&M University"
   time: "August 2019 - June 2023"
   title: "B.S in Economics, Minor in Statistics, M.S in Econometrics"
   subtitle: "4.0/4.0"
