@@ -62,10 +62,10 @@ title: Home
       <div class="button" data-ref="#papers-all">All</div>
     </li>
     <li>
-      <div class="button" data-ref="#papers-NLP">NLP</div>
+      <div class="button" data-ref="#papers-ml">ML</div>
     </li>
     <li>
-      <div class="button" data-ref="#papers-Other">Other</div>
+      <div class="button" data-ref="#papers-web3">Web3</div>
     </li>
   </ul>
 
@@ -134,7 +134,7 @@ title: Home
 
 
     <!-- NLP PAPERS -->
-    <div class="tab-pane" id="papers-NLP">
+    <div class="tab-pane" id="papers-ml">
       {% assign nlp_papers = site.data.publications.papers | where: "nlp", "y" %}
       {% for paper in nlp_papers %}
       <div class="paper">
@@ -161,7 +161,7 @@ title: Home
       {% endfor %}
     </div>
     <!-- Other Projects -->
-    <div class="tab-pane" id="papers-Other">
+    <div class="tab-pane" id="papers-web3">
       {% assign other_papers = site.data.publications.papers | where: "other", "y" %}
       {% for paper in other_papers %}
       <div class="paper">
