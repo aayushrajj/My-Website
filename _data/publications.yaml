@@ -42,7 +42,7 @@ papers:
 
   - title: "QuikBets"
     description: "Implementing a custom version of Avalanche's snowball consensus in Solidity to create a social betting platform"
-    venue: "Ishan Dhanani (final project for Texas A&M's CSCE689 - Blockchains couse)
+    venue: "Ishan Dhanani (final project for Texas A&M's CSCE689 - Blockchains couse)"
     code: https://github.com/ishandhanani/quikbets
     ml: y
     all: y
