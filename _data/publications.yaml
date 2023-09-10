@@ -4,7 +4,7 @@ papers:
     description: "Using ECDSA-signatures and selected disclosure zero knowledge proofs to issue signed verifiable credentials."
     venue: "Ishan Dhanani, Thomas Montford, Anish Maddipoti"
     code: https://github.com/ishandhanani/zkvc
-    ml: y
+    ml: n
     all: y
     web3: y
 
@@ -12,7 +12,7 @@ papers:
     description: "Developed ERC4907 rentable NFT implementation of Texas A&M's sports pass. Currently working on long-term implementation roadmap with university"
     venue: "Ishan Dhanani and Texas A&M Blockchain Dev Cohort"
     code: https://github.com/tamublockchain/revpass
-    ml: y
+    ml: n
     all: y
     web3: y
 
@@ -22,7 +22,7 @@ papers:
     code: https://github.com/ishandhanani/spotify-utility-suite
     ml: y
     all: y
-    web3: y 
+    web3: n
 
   - title: "CryptoDash"
     description: "Cryptocurrency trading dashboard that includes Twitter sentiment analysis, TA tools, and automatic data refresh via Bitfinex API"
@@ -36,7 +36,7 @@ papers:
     description: "Using commit-reveal schemes to play a multiplayer mixed strategy game on-chain (live on Ethereum Testnet)"
     venue: "Ishan Dhanani"
     code: https://github.com/ishandhanani/matchingpennies
-    ml: y
+    ml: n
     all: y
     web3: y
 
@@ -44,7 +44,7 @@ papers:
     description: "Implementing a custom version of Avalanche's snowball consensus in Solidity to create a social betting platform"
     venue: "Ishan Dhanani (final project for Texas A&M's CSCE689 - Blockchains couse)"
     code: https://github.com/ishandhanani/quikbets
-    ml: y
+    ml: n
     all: y
     web3: y
 
