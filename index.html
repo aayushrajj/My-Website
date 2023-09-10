@@ -135,7 +135,7 @@ title: Home
 
     <!-- NLP PAPERS -->
     <div class="tab-pane" id="papers-ml">
-      {% assign nlp_papers = site.data.publications.papers | where: "nlp", "y" %}
+      {% assign nlp_papers = site.data.publications.papers | where: "ml", "y" %}
       {% for paper in nlp_papers %}
       <div class="paper">
         <p class="title"><b>{{ paper.title }}</b>
@@ -162,7 +162,7 @@ title: Home
     </div>
     <!-- Other Projects -->
     <div class="tab-pane" id="papers-web3">
-      {% assign other_papers = site.data.publications.papers | where: "other", "y" %}
+      {% assign other_papers = site.data.publications.papers | where: "web3", "y" %}
       {% for paper in other_papers %}
       <div class="paper">
         <p class="title"><b>{{ paper.title }}</b>
