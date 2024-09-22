@@ -6,7 +6,7 @@ title: Home
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
   <p>
-    Hi, I work at Adrosonic as a Research & Innovation Engineer, developing Intelligent Automation and Generative AI solutions leveraging tools like Python, React, OpenAI, UiPath, and Power Platform. I'm passionate about designing Full Stack solutions and love experimenting with various technologies like React.js, Node.js, MongoDB, PostgreSQL, GO, and C++ among others. Always excited to explore new technologies and build cool projects along the way! If you'd like to chat, reach out to me on <a href=https://www.linkedin.com/in/ayush-raj-0309/ target="_blank">LinkedIn</a> or drop an <a href="mailto:ayushraj.work.dev@gmail.com">email</a>.
+    Hi, I am a Software Engineer who loves to solve problems and build things that makes a difference. Currently, I work at Adrosonic as a Research & Innovation Engineer, developing Intelligent Automation and Generative AI solutions leveraging tools like Python, React, OpenAI, UiPath, and Power Platform. I'm passionate about designing Full Stack solutions and love experimenting with various technologies like React, Node, MongoDB, PostgreSQL, GO, and C++ among others. Always excited to explore new technologies and build cool projects along the way! If you'd like to connect, reach out to me on <a href=https://www.linkedin.com/in/ayush-raj-0309/ target="_blank">LinkedIn</a> or drop an <a href="mailto:&#97;&#121;&#117;&#115;&#104;&#114;&#97;&#106;&#46;&#119;&#111;&#114;&#107;&#46;&#100;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">email</a>.
     <!-- 
 </p>
   <p>
@@ -60,10 +60,13 @@ title: Home
       <div class="button" data-ref="#papers-all">All</div>
     </li> -->
     <li>
-      <div class="button" data-ref="#papers-ml">ML</div>
+      <div class="button" data-ref="#papers-fullstack">Full Stack</div>
     </li>
     <li>
-      <div class="button" data-ref="#papers-web3">Web3</div>
+      <div class="button" data-ref="#papers-genai">Gen AI</div>
+    </li>
+    <li>
+      <div class="button" data-ref="#papers-other">Others</div>
     </li>
   </ul>
 
@@ -132,8 +135,8 @@ title: Home
 
 
     <!-- ml PAPERS -->
-    <div class="tab-pane active" id="papers-ml">
-      {% assign nlp_papers = site.data.publications.papers | where: "ml", "y" %}
+    <div class="tab-pane active" id="papers-fullstack">
+      {% assign nlp_papers = site.data.publications.papers | where: "fullstack", "y" %}
       {% for paper in nlp_papers %}
       <div class="paper">
         <p class="title"><b>{{ paper.title }}</b>
@@ -150,7 +153,7 @@ title: Home
           <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
           {% endif %}
           {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+          <a class="button" href="{{ paper.code }}" target="_blank">GitHub</a>
           {% endif %}
         </p>
         <p>{{ paper.description }}</p>
@@ -159,8 +162,35 @@ title: Home
       {% endfor %}
     </div>
     <!-- web3 Projects -->
-    <div class="tab-pane" id="papers-web3">
-      {% assign other_papers = site.data.publications.papers | where: "web3", "y" %}
+    <div class="tab-pane" id="papers-genai">
+      {% assign other_papers = site.data.publications.papers | where: "genai", "y" %}
+      {% for paper in other_papers %}
+      <div class="paper">
+        <p class="title"><b>{{ paper.title }}</b>
+          {% if paper.paper_pdf %}
+          <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+          {% endif %}
+          {% if paper.slides %}
+          <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+          {% endif %}
+          {% if paper.poster %}
+          <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+          {% endif %}
+          {% if paper.video %}
+          <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+          {% endif %}
+          {% if paper.code %}
+          <a class="button" href="{{ paper.code }}" target="_blank">GitHub</a>
+          {% endif %}
+        </p>
+        <p>{{ paper.description }}</p>
+        <p><i>{{ paper.venue }}</i></p>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Other Projects -->
+    <div class="tab-pane" id="papers-other">
+      {% assign other_papers = site.data.publications.papers | where: "other", "y" %}
       {% for paper in other_papers %}
       <div class="paper">
         <p class="title"><b>{{ paper.title }}</b>
@@ -262,10 +292,9 @@ title: Home
 
 
 <div class="docs-section" id="ack">
-  <h4>Acknowledgement</h4>
+  <h4>About Me</h4>
   <p>
-    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin
-      Saveski</a>
+    When I'm not buried in code, I'm likely catching up on sleep, discovering some hidden music gems, or nerding out over comics! I'm also a massive cinema buff and I like to think that I could make films like those of Tarkovsky, Truffaut, Fellini, or even the OG Michael Bay! Oh, and I studied at the same school where MS Dhoni did!!
   </p>
 
 </div>
