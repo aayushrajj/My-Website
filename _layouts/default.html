@@ -109,13 +109,16 @@
 
     <div class="footer">
       <div class="row">
-        <div class="four columns">
-          {{ site.data.main_info.name }}
+        <div class="three columns">
+          © 2024 {{site.data.main_info.name}}
         </div>
-        <div class="four columns">
-          {{ site.data.main_info.email }}
+        <div class="six columns">
+          <!-- {{ site.data.main_info.email }} -->
+          <!-- {{ "---" }} -->
+          Based on the template by <a href=https://github.com/msaveski/www_personal target="_blank">Martin Saveski</a>
+          
         </div>
-        <div class="four columns">
+        <div class="three columns">
           <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
             <i class="fa fa-twitter" aria-hidden="true"></i>
           </span>
@@ -132,7 +135,7 @@
   </div>
 
   <!-- Google Analytics -->
-  {% include google_analytics.html %}
+  <!-- {% include google_analytics.html %} -->
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
