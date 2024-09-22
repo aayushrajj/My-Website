@@ -18,7 +18,7 @@ papers:
     other: n
   
   - title: "Minion Language App"
-    description: "This app gets text from user as input and translate it into Banana! language fetching results via APIs from Funtranslations."
+    description: "This app gets text from user and translate it into Banana! language fetching results via APIs from Funtranslations."
     venue: "GitHub"
     code: https://github.com/aayushrajj/Minion-Language-App
     fullstack: y
