@@ -60,13 +60,13 @@ title: Home
       <div class="button" data-ref="#papers-all">All</div>
     </li> -->
     <li>
-      <div class="button" data-ref="#papers-ml">Full Stack</div>
+      <div class="button" data-ref="#papers-fullstack">Full Stack</div>
     </li>
     <li>
-      <div class="button" data-ref="#papers-web3">Gen AI</div>
+      <div class="button" data-ref="#papers-genai">Gen AI</div>
     </li>
     <li>
-      <div class="button" data-ref="#papers-web3">Others</div>
+      <div class="button" data-ref="#papers-other">Others</div>
     </li>
   </ul>
 
@@ -135,8 +135,8 @@ title: Home
 
 
     <!-- ml PAPERS -->
-    <div class="tab-pane active" id="papers-ml">
-      {% assign nlp_papers = site.data.publications.papers | where: "ml", "y" %}
+    <div class="tab-pane active" id="papers-fullstack">
+      {% assign nlp_papers = site.data.publications.papers | where: "fullstack", "y" %}
       {% for paper in nlp_papers %}
       <div class="paper">
         <p class="title"><b>{{ paper.title }}</b>
@@ -153,7 +153,7 @@ title: Home
           <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
           {% endif %}
           {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+          <a class="button" href="{{ paper.code }}" target="_blank">GitHub</a>
           {% endif %}
         </p>
         <p>{{ paper.description }}</p>
@@ -162,8 +162,35 @@ title: Home
       {% endfor %}
     </div>
     <!-- web3 Projects -->
-    <div class="tab-pane" id="papers-web3">
-      {% assign other_papers = site.data.publications.papers | where: "web3", "y" %}
+    <div class="tab-pane" id="papers-genai">
+      {% assign other_papers = site.data.publications.papers | where: "genai", "y" %}
+      {% for paper in other_papers %}
+      <div class="paper">
+        <p class="title"><b>{{ paper.title }}</b>
+          {% if paper.paper_pdf %}
+          <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+          {% endif %}
+          {% if paper.slides %}
+          <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+          {% endif %}
+          {% if paper.poster %}
+          <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+          {% endif %}
+          {% if paper.video %}
+          <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+          {% endif %}
+          {% if paper.code %}
+          <a class="button" href="{{ paper.code }}" target="_blank">GitHub</a>
+          {% endif %}
+        </p>
+        <p>{{ paper.description }}</p>
+        <p><i>{{ paper.venue }}</i></p>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Other Projects -->
+    <div class="tab-pane" id="papers-other">
+      {% assign other_papers = site.data.publications.papers | where: "other", "y" %}
       {% for paper in other_papers %}
       <div class="paper">
         <p class="title"><b>{{ paper.title }}</b>
