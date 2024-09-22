@@ -1,5 +1,4 @@
 papers:
-
   - title: "Veritus ID"
     description: "Using ECDSA-signatures and selected disclosure zero knowledge proofs to issue signed verifiable credentials."
     venue: "Ishan Dhanani, Thomas Montford, Anish Maddipoti (Accepted into Crypto Summer Lab backed by Polychain and Lightspeed)"
