@@ -1,4 +1,5 @@
 # My website (based on martin saveski's template)
+My portfolio website.
 
 ## Things to change
 baseurl in _config.yml
