@@ -1,6 +1,6 @@
 Ruby VENV setup on zsh terminal - stepwise commands:
 - export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+- eval "$(rbenv init -)"
 - source ~/.zshrc                     
 - ruby -v 
 
